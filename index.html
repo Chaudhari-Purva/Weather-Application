@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<main class="app">
+
+  <!-- Main Weather Card -->
+ <div class="weather-card glass main-card">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search city..." />
+    <button id="searchBtn">🔍</button>
+  </div>
+
+  <img id="mainIcon" />
+
+  <h1 id="mainTemp">--°C</h1>
+  <h2 id="mainCity">City</h2>
+  <p id="mainDesc">Weather</p>
+
+  <div class="extra-details">
+    <span>💧 <b id="humidity">--</b>%</span>
+    <span>🌬️ <b id="wind">--</b> km/h</span>
+  </div>
+ </div>
+
+
+  <!-- 15 Cities Carousel -->
+   <section class="carousel-wrapper">
+  <h3>City Weather Overview</h3>
+
+  <button id="prevBtn" class="nav-btn">❮</button>
+  <button id="nextBtn" class="nav-btn">❯</button>
+
+  <div class="carousel" id="cityCarousel"></div>
+   </section>
+
+<footer class="footer">
+  © 2026 | Designed by Purva
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
